@@ -42,7 +42,7 @@ public class Main {
             }
             count++;
             if(count>105){
-                System.out.println("botva\n");
+                System.out.println("DRAW\n");
                 return;
             }
         }
