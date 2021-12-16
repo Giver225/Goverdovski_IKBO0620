@@ -1,5 +1,4 @@
 package com.company;
-
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -9,6 +8,7 @@ public class Main {
 
 
     public static Boolean compare(int a, int b){
+        
         if(a==0&&b==9) return true;
 
         if ((a==9 && b==0)) return false;
@@ -25,13 +25,19 @@ public class Main {
             tmp = scanner.nextInt();
             st1.add(tmp);
         }
+        
+        
         System.out.println("Print second deck:");
         Queue<Integer> st2 = new LinkedList<Integer>();
         for (int i = 0; i < 5; i++) {
             tmp = scanner.nextInt();
             st2.add(tmp);
         }
+        
+        
         int count =0;
+        
+        
         while (!st1.isEmpty()&&!st2.isEmpty()){
             System.out.println(st1);
             System.out.println(st2);
@@ -46,6 +52,8 @@ public class Main {
                 return;
             }
         }
+        
+        
 
         if(st1.isEmpty()) System.out.println("First "+count);
         else System.out.println("Second "+count);
