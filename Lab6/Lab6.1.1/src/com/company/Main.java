@@ -10,6 +10,8 @@ public class Main {
 
     public static Boolean compare(int a, int b){
         if(a==0&&b==9) return true;
+
+        if ((a==9 && b==0)) return false;
         if(a>b) return true;
         return false;
     }
